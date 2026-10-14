@@ -1,0 +1,78 @@
+CMake Deprecation Warning at CMakeLists.txt:3 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+*************************************************************************************
+                    Building ESP-Hosted Firmware version :: 1.0.3 
+*************************************************************************************
+Adding "set-target"'s dependency "fullclean" to list of commands with default set of options.
+Executing action: fullclean
+Build directory '/mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/network_adapter/build' not found. Nothing to clean.
+Executing action: set-target
+Set Target to: esp32s3, new sdkconfig will be created.
+Running cmake in directory /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/network_adapter/build
+Executing "cmake -G Ninja -DPYTHON_DEPS_CHECKED=1 -DPYTHON=/mnt/esp32-build/idf-tools/python_env/idf5.1_py3.10_env/bin/python -DESP_PLATFORM=1 -DIDF_TARGET=esp32s3 -DCCACHE_ENABLE=0 /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/network_adapter"...
+-- Found Git: /usr/bin/git (found version "2.55.0")
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /mnt/esp32-build/idf-tools/tools/xtensa-esp32s3-elf/esp-12.2.0_20230208/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /mnt/esp32-build/idf-tools/tools/xtensa-esp32s3-elf/esp-12.2.0_20230208/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /mnt/esp32-build/idf-tools/tools/xtensa-esp32s3-elf/esp-12.2.0_20230208/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building ESP-IDF components for target esp32s3
+-- Project sdkconfig file /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/network_adapter/sdkconfig
+Loading defaults file /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/network_adapter/sdkconfig.defaults...
+/mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/network_adapter/sdkconfig.defaults:13 CONFIG_ESP32_WIFI_NVS_ENABLED was replaced with CONFIG_ESP_WIFI_NVS_ENABLED
+/tmp/kconfgen_tmpmarf63rh:4 line was updated to CONFIG_SDIO_DAT2_DISABLED=n
+/tmp/kconfgen_tmpmarf63rh:9 line was updated to CONFIG_BT_BLUEDROID_ENABLED=n
+/tmp/kconfgen_tmpmarf63rh:13 line was updated to CONFIG_ESP_WIFI_NVS_ENABLED=n
+Loading defaults file /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/network_adapter/sdkconfig.defaults.esp32s3...
+Compiler supported targets: xtensa-esp32s3-elf
+
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of time_t
+-- Check size of time_t - done
+CMake Deprecation Warning at /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/mbedtls/mbedtls/CMakeLists.txt:21 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- Found Python3: /mnt/esp32-build/idf-tools/python_env/idf5.1_py3.10_env/bin/python (found version "3.10.12") found components: Interpreter
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- App "network_adapter" version: release/ng-v1.0.2-195-ge2f19ed-
+-- Adding linker script /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/network_adapter/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/esp_system/ld/esp32s3/sections.ld.in
+-- Adding linker script /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
+-- Adding linker script /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport touch_element ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/app_trace /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/app_update /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/bootloader /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/bootloader_support /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/bt /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/cmock /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/console /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/cxx /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/driver /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/efuse /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/esp-tls /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/esp_adc /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/esp_app_format /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/esp_coex /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/esp_common /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/esp_eth /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/esp_event /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/esp_gdbstub /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/esp_hid /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/esp_http_client /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/esp_http_server /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/esp_https_ota /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/esp_https_server /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/esp_hw_support /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/esp_lcd /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/esp_local_ctrl /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/esp_mm /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/esp_netif /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/esp_netif_stack /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/esp_partition /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/esp_phy /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/esp_pm /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/esp_psram /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/esp_ringbuf /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/esp_rom /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/esp_system /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/esp_timer /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/esp_wifi /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/espcoredump /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/esptool_py /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/fatfs /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/freertos /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/hal /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/heap /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/http_parser /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/idf_test /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/ieee802154 /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/json /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/log /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/lwip /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/network_adapter/main /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/mbedtls /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/mqtt /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/newlib /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/nvs_flash /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/openthread /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/partition_table /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/perfmon /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/protobuf-c /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/protocomm /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/pthread /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/sdmmc /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/soc /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/spi_flash /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/spiffs /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/tcp_transport /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/touch_element /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/ulp /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/unity /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/usb /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/vfs /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/wear_levelling /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/wifi_provisioning /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/wpa_supplicant /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/esp-idf/components/xtensa
+-- Configuring done (2.6s)
+-- Generating done (0.2s)
+-- Build files have been written to: /mnt/esp32-build/esp-hosted/esp_hosted_ng/esp/esp_driver/network_adapter/build

@@ -1,0 +1,273 @@
+INFO  :: *** Generating package version descriptions
+INFO  :: Master packages: autoconf automake avr-libc binutils bison cloog dtc duma elf2flt expat gcc gdb gettext glibc gmp gnuprumcu isl libelf libiconv libtool linux ltrace m4 make mingw-w64 moxiebox mpc mpfr musl ncurses newlib-nano newlib picolibc strace uClibc-ng zlib zstd
+INFO  :: Generating 'config/versions/autoconf.in'
+INFO  :: Generating 'config/versions/automake.in'
+INFO  :: Generating 'config/versions/avr-libc.in'
+INFO  :: Generating 'config/versions/binutils.in'
+INFO  :: Generating 'config/versions/bison.in'
+INFO  :: Generating 'config/versions/cloog.in'
+INFO  :: Generating 'config/versions/dtc.in'
+INFO  :: Generating 'config/versions/duma.in'
+INFO  :: Generating 'config/versions/elf2flt.in'
+INFO  :: Generating 'config/versions/expat.in'
+INFO  :: Generating 'config/versions/gcc.in'
+INFO  :: Generating 'config/versions/gdb.in'
+INFO  :: Generating 'config/versions/gettext.in'
+INFO  :: Generating 'config/versions/glibc.in'
+INFO  :: Generating 'config/versions/gmp.in'
+INFO  :: Generating 'config/versions/gnuprumcu.in'
+INFO  :: Generating 'config/versions/isl.in'
+INFO  :: Generating 'config/versions/libelf.in'
+INFO  :: Generating 'config/versions/libiconv.in'
+INFO  :: Generating 'config/versions/libtool.in'
+INFO  :: Generating 'config/versions/linux.in'
+INFO  :: Generating 'config/versions/ltrace.in'
+INFO  :: Generating 'config/versions/m4.in'
+INFO  :: Generating 'config/versions/make.in'
+INFO  :: Generating 'config/versions/mingw-w64.in'
+INFO  :: Generating 'config/versions/moxiebox.in'
+INFO  :: Generating 'config/versions/mpc.in'
+INFO  :: Generating 'config/versions/mpfr.in'
+INFO  :: Generating 'config/versions/musl.in'
+INFO  :: Generating 'config/versions/ncurses.in'
+INFO  :: Generating 'config/versions/newlib-nano.in'
+INFO  :: Generating 'config/versions/newlib.in'
+INFO  :: Generating 'config/versions/picolibc.in'
+INFO  :: Generating 'config/versions/strace.in'
+INFO  :: Generating 'config/versions/uClibc-ng.in'
+INFO  :: Generating 'config/versions/zlib.in'
+INFO  :: Generating 'config/versions/zstd.in'
+INFO  :: *** Generating menu/choice selections
+INFO  :: Generating arch.in (choice)
+INFO  :: Generating kernel.in (choice)
+INFO  :: Generating cc.in (choice)
+INFO  :: Generating binutils.in (choice)
+INFO  :: Generating libc.in (choice)
+INFO  :: Generating debug.in (menu)
+INFO  :: Generating comp_tools.in (menu)
+INFO  :: Generating comp_libs.in (menu)
+INFO  :: *** Gathering the list of data files to install
+INFO  :: *** Running autoreconf
+configure.ac:306: warning: gl_HOST_CPU_C_ABI_32BIT is m4_require'd but not m4_defun'd
+m4/lib-prefix.m4:155: AC_LIB_PREPARE_MULTILIB is expanded from...
+m4/lib-link.m4:181: AC_LIB_LINKFLAGS_BODY is expanded from...
+m4/iconv.m4:10: AM_ICONV_LINKFLAGS_BODY is expanded from...
+m4/gettext.m4:55: AM_GNU_GETTEXT is expanded from...
+configure.ac:306: the top level
+INFO  :: *** Done!
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking how to create a pax tar archive... gnutar
+checking whether make supports nested variables... (cached) yes
+checking whether to enable maintainer-specific portions of Makefiles... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking whether ln -s works... yes
+checking whether install takes --strip-program option... yes
+checking for ggrep... no
+checking for grep... grep
+checking for absolute path to grep... /usr/bin/grep
+checking for gegrep... no
+checking for egrep... egrep
+checking for absolute path to egrep... /usr/bin/egrep
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for sed... /usr/bin/sed
+checking for GNU sed >= 4.0... yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc... gcc3
+checking for g++... g++
+checking whether the compiler supports GNU C++... yes
+checking whether g++ accepts -g... yes
+checking for g++ option to enable C++11 features... none needed
+checking dependency style of g++... gcc3
+checking how to run the C preprocessor... gcc -E
+checking for flex... flex
+checking for lex output file root... lex.yy
+checking for lex library... none needed
+checking whether yytext is a pointer... yes
+checking for bison... bison -y
+checking if bison is the parser generator... yes
+checking whether g++ supports C++11 features by default... yes
+checking if gcc can static link... yes
+checking for ranlib... ranlib
+checking for gobjcopy... no
+checking for objcopy... objcopy
+checking for absolute path to objcopy... /usr/bin/objcopy
+checking for gobjdump... no
+checking for objdump... objdump
+checking for absolute path to objdump... /usr/bin/objdump
+checking for greadelf... no
+checking for readelf... readelf
+checking for absolute path to readelf... /usr/bin/readelf
+checking for flex... flex
+checking for makeinfo... makeinfo
+checking for cut... cut
+checking for readlink... readlink
+checking for tar... tar
+checking for gzip... gzip
+checking for bzip2... bzip2
+checking for xz... xz
+checking for unzip... unzip
+checking for help2man... help2man
+checking for file... file
+checking for which... which
+checking for lzip... no
+checking for wget... wget
+checking for curl... curl
+checking for meson... no
+checking for ninja... ninja
+checking for rsync... rsync
+checking whether to use getconf or sysctl to count CPUs... getconf _NPROCESSORS_ONLN
+checking for gpatch... no
+checking for patch... patch
+checking for absolute path to patch... /usr/bin/patch
+checking whether patch supports --no-backup-if-mismatch... yes
+checking for bash... /usr/bin/bash
+checking for GNU bash >= 3.1... yes
+checking for absolute path to gawk... /usr/bin/gawk
+checking for GNU awk... yes
+checking for make... /usr/bin/gmake
+checking for GNU make >= 3.81... yes
+checking for GNU make >= 4.0... yes
+checking for libtool... /usr/bin/libtool
+checking for GNU libtool >= 2.4... yes
+checking for libtoolize... /usr/bin/libtoolize
+checking for GNU libtoolize >= 2.4... yes
+checking for GNU autoconf >= 2.71... yes
+checking for autoreconf... /mnt/esp32-build/autoconf-2.71/root/bin/autoreconf
+checking for GNU autoreconf >= 2.71... yes
+checking for GNU automake >= 1.16... yes
+checking for m4... /usr/bin/m4
+checking for GNU m4 >= 1.4.12... yes
+checking for python build information... 
+checking for python3.12... no
+checking for python3.11... no
+checking for python3.10... python3.10
+checking for main in -lpython3.10... yes
+  results of the Python check:
+    Binary:      python3.10
+    Library:     python3.10
+    Include Dir: /usr/include/python3.10
+checking for python version greater than 3.4... yes: 3.10
+checking for bison... /usr/bin/bison
+checking for bison >= 2.7... yes
+checking for bison >= 3.0.4... yes
+checking for dtc... no
+checking for cvs... no
+checking for svn... svn
+checking for git... git
+checking for gmd5sum... no
+checking for md5sum... /usr/bin/md5sum
+checking for gsha1sum... no
+checking for sha1sum... /usr/bin/sha1sum
+checking for gsha256sum... no
+checking for sha256sum... /usr/bin/sha256sum
+checking for gsha512sum... no
+checking for sha512sum... /usr/bin/sha512sum
+checking for inline... inline
+checking for GNU libc compatible malloc... yes
+checking for GNU libc compatible realloc... yes
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for size_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+./configure: line 13432: gl_HOST_CPU_C_ABI_32BIT: command not found
+checking for ELF binary format... yes
+checking for the common suffixes of directories in the library search path... ./configure: line 13533: test: !=: unary operator expected
+./configure: line 13539: test: !=: unary operator expected
+./configure: line 13564: test: =: unary operator expected
+./configure: line 13568: test: =: unary operator expected
+lib,lib,lib
+checking whether NLS is requested... yes
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyPreferredLanguages... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for ncursesw via pkg-config... yes
+checking for working ncursesw/curses.h... yes
+checking for working ncursesw.h... no
+checking for working ncurses.h... yes
+checking for Curses Panel library with ncursesw/panel.h... yes
+checking for Curses Menu library with ncursesw/menu.h... yes
+checking for build time... Wed Oct 14 11:55:23 2026
+checking if the manual needs to be installed... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating paths.sh
+config.status: creating kconfig/Makefile
+config.status: creating config/configure.in
+config.status: creating config.h
+config.status: executing depfiles commands
+/usr/bin/gmake  all-recursive
+gmake[1]: Entering directory '/mnt/esp32-build/crosstool-NG'
+Making all in kconfig
+gmake[2]: Entering directory '/mnt/esp32-build/crosstool-NG/kconfig'
+  LEX      lexer.lex.c
+  YACC     parser.tab.c
+/usr/bin/gmake  all-am
+gmake[3]: Entering directory '/mnt/esp32-build/crosstool-NG/kconfig'
+  CC       conf.o
+  CC       confdata.o
+  CC       expr.o
+  CC       symbol.o
+  CC       preprocess.o
+  CC       util.o
+  CC       parser.tab.o
+  CC       lexer.lex.o
+  CCLD     conf
+  CC       nconf-nconf.o
+  CC       nconf-nconf.gui.o
+  CC       nconf-confdata.o
+  CC       nconf-expr.o
+  CC       nconf-symbol.o
+  CC       nconf-preprocess.o
+  CC       nconf-util.o
+  CC       nconf-parser.tab.o
+  CC       nconf-lexer.lex.o
+  CCLD     nconf
+  CC       mconf.o
+  CC       lxdialog/checklist.o
+  CC       lxdialog/inputbox.o
+  CC       lxdialog/menubox.o
+  CC       lxdialog/textbox.o
+  CC       lxdialog/util.o
+  CC       lxdialog/yesno.o
+  CCLD     mconf
+gmake[3]: Leaving directory '/mnt/esp32-build/crosstool-NG/kconfig'
+gmake[2]: Leaving directory '/mnt/esp32-build/crosstool-NG/kconfig'
+gmake[2]: Entering directory '/mnt/esp32-build/crosstool-NG'
+  GEN      ct-ng
+  GEN      bash-completion/ct-ng
+  GEN      docs/ct-ng.1
+gmake[2]: Leaving directory '/mnt/esp32-build/crosstool-NG'
+gmake[1]: Leaving directory '/mnt/esp32-build/crosstool-NG'

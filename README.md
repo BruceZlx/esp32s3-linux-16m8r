@@ -16,7 +16,8 @@
 | `sdkconfig.defaults.esp32s3.16n8r` | esp-hosted/ESP-IDF 配置：16MB Flash、`partition_table.esp32s3.16m`、`LINUX_PSRAM_8M` |
 | `flash.sh` | 产物烧录脚本（随 dist 一起打包） |
 
-内核/rootfs 直接复用上游 buildroot 配置 `esp32s3_devkit_c1_8m_defconfig`
+内核/rootfs 复用上游 buildroot（分支 `xtensa-2025.08-fdpic`，2025-11 更新到
+Linux 6.16）的配置 `esp32s3_devkit_c1_8m_defconfig`
 （内核数据段按 8MB PSRAM 布局在 `0x3d800000`，DTB 为 `esp32s3-devkit-c1`）；
 Flash 大小只由 esp-hosted 侧 sdkconfig 与分区表决定，与 buildroot 无关。
 
@@ -28,7 +29,7 @@ Flash 大小只由 esp-hosted 侧 sdkconfig 与分区表决定，与 buildroot �
 | `partition-table.bin` | 0x08000 | 16MB flash 分区表 |
 | `network_adapter.bin` | 0x10000 | esp-hosted 固件（CPU1 上的 WiFi 协处理器 + Linux 加载器） |
 | `etc.jffs2` | 0xb0000 | 可写 /etc 分区（wpa_supplicant 配置等） |
-| `xipImage` | 0x120000 | Linux 6.11 内核（XIP，片上执行） |
+| `xipImage` | 0x120000 | Linux 6.16 内核（XIP，片上执行） |
 | `rootfs.cramfs` | 0x600000 | 根文件系统（XIP cramfs） |
 
 ## 烧录与使用

@@ -28,7 +28,7 @@ LOGS="$ROOT/logs"
 
 CTNG_VER=xtensa-fdpic
 CTNG_CONFIG=xtensa-esp32s3-linux-uclibcfdpic
-BUILDROOT_VER=xtensa-2024.08-fdpic
+BUILDROOT_VER=xtensa-2025.08-fdpic
 ESP_HOSTED_VER=ipc-5.1.1
 ESP_HOSTED_CONFIG=sdkconfig.defaults.esp32s3.16n8r
 BUILDROOT_CONFIG=esp32s3_devkit_c1_8m

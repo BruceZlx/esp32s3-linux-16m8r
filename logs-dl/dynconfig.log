@@ -1,0 +1,3 @@
+make: Entering directory '/mnt/esp32-build/xtensa-dynconfig'
+cc -shared -DORIG -Iinclude -I/mnt/esp32-build/esp32s3/binutils -I/mnt/esp32-build/esp32s3/xtensa/config -fPIC -O2 xtensa-config.c /mnt/esp32-build/esp32s3/binutils/xtensa-modules.c /mnt/esp32-build/esp32s3/gdb/xtensa-config.c /mnt/esp32-build/esp32s3/gdb/xtensa-xtregs.c -o esp32s3.so
+make: Leaving directory '/mnt/esp32-build/xtensa-dynconfig'
